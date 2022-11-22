@@ -1,9 +1,9 @@
 <?php
 
-namespace Kanvai\DigitalOcean\Abstracts {
+namespace Kanvai\Digitalocean\Abstracts {
 
     use JsonSerializable;
-    use Kanvai\DigitalOcean\Interfaces\ArrayableInterface;
+    use Kanvai\Digitalocean\Interfaces\ArrayableInterface;
 
     abstract class ClusterData implements JsonSerializable, ArrayableInterface {
 

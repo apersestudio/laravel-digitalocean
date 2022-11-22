@@ -1,6 +1,6 @@
 <?php
 
-namespace Apersestudio\DigitalOcean {
+namespace Apersestudio\Digitalocean {
 
     abstract class Resource {
 

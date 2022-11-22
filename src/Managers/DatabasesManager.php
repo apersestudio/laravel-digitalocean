@@ -1,11 +1,11 @@
 <?php
 
-namespace Kanvai\DigitalOcean\Managers {
+namespace Kanvai\Digitalocean\Managers {
 
     use \Exception;
-    use \Kanvai\DigitalOcean\Interfaces\DatabasesManagerInterface;
-    use \Kanvai\DigitalOcean\Abstracts\ClusterData;
-    use \Kanvai\DigitalOcean\Abstracts\Manager;
+    use \Kanvai\Digitalocean\Interfaces\DatabasesManagerInterface;
+    use \Kanvai\Digitalocean\Abstracts\ClusterData;
+    use \Kanvai\Digitalocean\Abstracts\Manager;
 
     class DatabasesManager extends Manager implements DatabasesManagerInterface {
 

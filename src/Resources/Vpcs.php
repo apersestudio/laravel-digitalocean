@@ -1,9 +1,9 @@
 <?php
 
-namespace Apersestudio\DigitalOcean\Resources {
+namespace Apersestudio\Digitalocean\Resources {
 
     use \Exception;
-    use Apersestudio\DigitalOcean\Resource;
+    use Apersestudio\Digitalocean\Resource;
 
     class Vpcs extends Resource {
 

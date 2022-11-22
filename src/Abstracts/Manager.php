@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanvai\DigitalOcean\Abstracts {
+namespace Kanvai\Digitalocean\Abstracts {
 
     use Illuminate\Support\Facades\Config;
     use Illuminate\Support\Facades\Http;

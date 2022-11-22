@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanvai\DigitalOcean\Interfaces {
+namespace Kanvai\Digitalocean\Interfaces {
 
     use \Exception;
 
