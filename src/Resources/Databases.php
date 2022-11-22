@@ -152,6 +152,20 @@ namespace Apersestudio\DigitalOcean\Resources {
 
         public function options() {
             $request = $this->http->get($this->endpoint . "databases/options");
+            $code = $request->status();
+            switch ($code) {
+                case 200:
+                    $response = $request->json();
+                    $mainkey = "options";
+                    $response["data"] = $response[$mainkey];
+                    unset($response[$mainkey]);
+                    return $response;
+                case 401: throw new Exception("Bad authentication", $code);
+                case 404: throw new Exception("Request not found.", $code);
+                case 429: throw new Exception("Request limit exceeded", $code);
+                case 500: throw new Exception("DigitalOcean Error", $code);
+                default: throw new Exception("DigitalOcean Event: ".$code, $code);
+            }
         }
 
     }
