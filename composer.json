@@ -1,0 +1,32 @@
+{
+    "name": "apersestudio/digitalocean",
+    "description": "Digital Ocean API adapted to work with laravel",
+    "type": "library",
+    "keywords": ["apersestudio", "digitalocean"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jaime Zaballa Espinosa",
+            "email": "jaime@apersestudio.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0.2",
+        "laravel/framework": "^9.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apersestudio\\Digitalocean\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apersestudio\\Digitalocean\\ServiceProvider"
+            ],
+            "aliases": {
+                "DOV2": "Apersestudio\\Digitalocean\\APIV2"
+            }
+        }
+    }
+}
