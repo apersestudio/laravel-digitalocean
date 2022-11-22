@@ -150,6 +150,10 @@ namespace Apersestudio\DigitalOcean\Resources {
             }
         }
 
+        public function foo() {
+            $request = $this->http->get($this->endpoint . "databases/options");
+        }
+
     }
 
 }
