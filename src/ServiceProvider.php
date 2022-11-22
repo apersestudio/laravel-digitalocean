@@ -2,7 +2,7 @@
 
 namespace Apersestudio\Digitalocean {
 
-    Illuminate\Support\ServiceProvider as LaravelServiceProvider;
+    use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
     class ServiceProvider extends LaravelServiceProvider {
 
